@@ -64,7 +64,7 @@ Then load the HTML in your browser and you should see this
 More Details
 ----------
 ### Div container in HTML
-For each signal bar graphic you intend to create, place a corresponding &lt;div> in your HTML. 
+For each signal bar graphic, place a corresponding &lt;div> in the HTML. 
 This div is used as a container to hold the signal bars graphic. 
 The div needs to have a class name - it can be anything, but it's easiest to stick with signal-bars1,
 signal-bars2, etc. 
@@ -76,7 +76,7 @@ Example
 </pre>
 
 ### Signal Bars constructor
-For each signal bar graphic you intend to create you need to instantiate a corresponding SignalBars object. 
+For each signal bar graphic, instantiate a corresponding SignalBars object. 
 The SignalBars contstructor requires two parameters - an object that stores configuration settings, and the class
 name of the corresponding &lt;div> in the HTML.
 
@@ -86,7 +86,7 @@ var sb1 = new SignalBars(opts1, "signal-bars1");
 var sb2 = new SignalBars(opts1, "signal-bars2");
 </pre>
 where opts1 is an object that stores configuration settings (see below for more details). 
-In this example I am passing the same configuration settings to both signal bars so that they look the same.
+In this example, I am passing the same configuration settings to both signal bars so that they look the same.
 However, they can be constructed with different configuration settings if desired:
 <pre>
 var sb1 = new SignalBars(opts1, "signal-bars1");
