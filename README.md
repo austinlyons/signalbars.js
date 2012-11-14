@@ -13,7 +13,7 @@ Documentation
 =============
 Quick Start
 ----------
-To use SignalBarsJS, you'll need to include signalbars.js and jQuery. Then sprinkle in a bit of HTML and JavaScript. 
+To create signal bars, simply include signalbars.js and jQuery and sprinkle in a bit of HTML and JavaScript. 
 
 * First, create an HTML file and reference jQuery and SignalBarsJS. 
 
