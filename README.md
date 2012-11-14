@@ -2,7 +2,7 @@ SignalBarsJS
 ===========
 SignalBarsJS is small script that generates signal bars.
 
-What are "signal bars"? The graphic on your phone that conveys the strength of your reception.
+What are "signal bars"? They are the graphic on a phone that conveys the wireless reception strength.
 
 Here's a screenshot of a signal bar created using SignalBarsJS.
 
