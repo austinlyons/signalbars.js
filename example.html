@@ -1,26 +1,48 @@
 <html>
   <head>
+    <!-- Include jQuery -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <!-- Include the signalbars.js script -->
     <script type="text/javascript" src="signalbars.js"></script>
   </head>
   <body style="background-color:1c1c1c;">
+
     <script>
+    /* When page loads, set configure signal bar options and draw the bars */
 		$(document).ready(function(){
-			var opts = {
+			// required options
+      var opts1 = {
 			  "unitSize": 5,
 			  "emptyBackgroundColor": "grey",
 			  "emptyBorderColor": "grey",
 			  "fillBackgroundColor": "gold",
 			  "fillBorderColor": "gold",
 			}
-			var sb1 = new SignalBars(opts, "signal-bars1");
-			var sb2 = new SignalBars(opts, "signal-bars2");
 
+      var opts2 = {
+        "unitSize": 10,
+        "emptyBackgroundColor": "#d10000",
+        "emptyBorderColor": "#d10000",
+        "fillBackgroundColor": "#ffffff",
+        "fillBorderColor": "#ffffff",
+      }
+
+      // instantiate three signal bars
+			var sb1 = new SignalBars(opts1, "signal-bars1");
+			var sb2 = new SignalBars(opts1, "signal-bars2");
+      var sb3 = new SignalBars(opts2, "signal-bars3");
+
+      // draw the signal bars with varying signal strengths
 			sb1.setStrength(60);
-			//sb2.setStrength(15);
+			sb2.setStrength(15);
+      sb3.setStrength(35);
+
 		});
 	</script>
-	<div id="signal-bars1"></div>
-	<div id="signal-bars2"></div>
+	  <!-- Add a div for each signal bar you want to render -->
+    <div id="signal-bars1"></div>
+	  <div id="signal-bars2"></div>
+    <div id="signal-bars3"></div>
+
   </body>
 </html>
