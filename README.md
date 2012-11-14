@@ -30,6 +30,7 @@ Creating signal bars is as easy as linking to signalbars.js and jQuery and sprin
 
 <pre>
 &lt;body>
+  &lt;!-- add this div in the body of the HTML document -->
   &lt;div id="signal-bars1"></div>
 &lt;/body>
 </pre>
@@ -118,3 +119,8 @@ all of the bars will be this color.
 here
 
 ### setStrength
+setStrength draws the signal bars, filling the bars according to the signal strength. It accepts an integer between 
+0 and 100, which represents the signal strength percentage. 
+It fills in zero bars for a signal strength less than 10, one bar for strength in 11-30, two bars for strength in 31-50, 
+three bars for strength in 51-70, four bars for strength in 71-90, and five bars for strength 91-100.
+However, this range can be easily changed to fit your needs by tweaking the code in signalbars.js.
