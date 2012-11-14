@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <!-- Include jQuery -->
+    <script type="text/javascript" src="http:////ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- Include the signalbars.js script -->
+    <script type="text/javascript" src="signalbars.js"></script>
+  </head>
+  <body>
+  <script>
+    /* When page loads, set configure signal bar options and draw the bars */
+    $(document).ready(function(){
+      // required options
+      var opts1 = {
+        "unitSize": 3,
+        "emptyBackgroundColor": "white",
+        "emptyBorderColor": "black",
+        "fillBackgroundColor": "gold",
+        "fillBorderColor": "black",
+      }
+
+      // instantiate a signal bars
+      var sb1 = new SignalBars(opts1, "signal-bars1");
+
+      // draw the signal bars with a given strength
+      sb1.setStrength(60);
+
+    });
+  </script>
+  <!-- Add a div for each signal bar you want to render -->
+  <div id="signal-bars1"></div>
+  </body>
+</html>
