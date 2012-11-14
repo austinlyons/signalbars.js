@@ -94,5 +94,27 @@ var sb2 = new SignalBars(opts2, "signal-bars2");
 </pre>
 
 ### options
+The size and color of the signal bars are configured by passing an associative array to the SignalBars constructor. 
+The array is expected to be of the following form:
+<pre>
+var opts1 = {
+	  "unitSize": 2,
+	  "emptyBackgroundColor": "#dedede",
+	  "emptyBorderColor": "#dedede",
+	  "fillBackgroundColor": "#aa0000",
+	  "fillBorderColor": "#aa0000",
+}
+</pre>
+The required configuration parameters are
+* unitSize: used to calculate how big the signal bars should be. This can be anything from 1-1000. 
+For more details, take a peek at the drawBars function in signalbars.js.
+* emptyBackgroundColor: the color of the signal bar when it's not filled in 
+(i.e when the strength is 0, all of the bars will have this color)
+* emptyBorderColor: if you want the border of the bar to be different than the background, specify it here.
+If you want them to be the same, explicity set them to have the same color (as in the example above)
+* fillBackgroundColor: This is the color of the bars when they are filled (i.e. when signal strength is 100%,
+all of the bars will be this color.
+* fillBorderColor: if you want the fill border color to be different than the fill background color, change it
+here
 
 ### setStrength
