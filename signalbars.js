@@ -55,7 +55,7 @@ function SignalBars(opts, divId) {
 				var height = 2*(i+1)*unitSize;
 				var marginTop = (10*unitSize)-height;
 
-				htmlstr += "<div id=\"bar" + (i+1) + "\" style=\"float:left;background-color:" + emptyBackgroundColor + ";border:1px solid " + emptyBorderColor + ";width:" + width +" px;margin-right:" + marginRight + "px;height:" + height + "px;margin-top:" + marginTop +"px;\"></div>";
+				htmlstr += "<div id=\"bar" + (i+1) + "\" style=\"float:left;background-color:" + emptyBackgroundColor + ";border:1px solid " + emptyBorderColor + ";width:" + width +"px;margin-right:" + marginRight + "px;height:" + height + "px;margin-top:" + marginTop +"px;\"></div>";
 			}
 			$sigBarsDiv.html(htmlstr);
 		}
