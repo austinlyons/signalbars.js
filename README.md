@@ -47,7 +47,7 @@ Creating signal bars is as easy as linking to signalbars.js and jQuery and sprin
       "emptyBorderColor": "black",
       "fillBackgroundColor": "gold",
       "fillBorderColor": "black",
-    }
+    };
     
    var sb1 = new SignalBars(opts1, "signal-bars1");
    
