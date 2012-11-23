@@ -10,7 +10,6 @@
 function SignalBars(opts, divId) {
 	this.opts = opts;
 	this.divId = divId;
-
 	/* handleNumberEdgeCase checks that n is a number between min and max */
 	this.handleNumberEdgeCase = function(n, min, max){
 		if(isNaN(n) || n < min){
@@ -109,4 +108,5 @@ function SignalBars(opts, divId) {
 		this.fillBars(strength, this.divId, this.opts["fillBackgroundColor"], this.opts["fillBorderColor"]);
 		return "strength set to " + strength;
 	};
+
 }

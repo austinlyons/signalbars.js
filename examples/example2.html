@@ -18,15 +18,26 @@
         "fillBorderColor": "black"
       };
 
+      var opts2 = {
+        "unitSize": 3,
+        "emptyBackgroundColor": "#ffffff",
+        "emptyBorderColor": "#000000",
+        "fillBackgroundColor": "#088A29",
+        "fillBorderColor": "#088A29",
+      };
+
       // instantiate a signal bars
       var sb1 = new SignalBars(opts1, "signal-bars1");
+      var sb2 = new SignalBars(opts2, "signal-bars2");
 
       // draw the signal bars with a given strength
       sb1.setStrength(60);
+      sb2.setStrength(35);
 
     });
   </script>
   <!-- Add a div for each signal bar you want to render -->
   <div id="signal-bars1"></div>
+  <div id="signal-bars2"></div>
   </body>
 </html>
