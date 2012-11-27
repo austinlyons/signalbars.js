@@ -125,6 +125,11 @@ It fills in zero bars for a signal strength less than 10, one bar for strength i
 three bars for strength in 51-70, four bars for strength in 71-90, and five bars for strength 91-100.
 However, this range can be easily changed to fit your needs by tweaking the code in signalbars.js.
 
+Scrolling Bars
+----------------
+Open examples/scrolling-bars.html in a browser to see how SignalBarsJS can be used to create a scrolling effect.
+(i.e. the "I'm searching for a signal" effect)
+
 License
 =================
 Copyright (C) 2012 Austin Lyons
